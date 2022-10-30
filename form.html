@@ -8,7 +8,13 @@
 </head>
 <body>
     <h1>Estudos de Formulário</h1>
-    <form action="cadstro.php" autocomplete="on">
+    <form action="cadstro.php" autocomplete="on"> 
+        <p>
+            <label for="irang">Informe o valor: </label> 
+            <input type="range" name="rang" id="irang" min="0" max="100" step="10" value="0" oninput="ival.innerHTML=Number(irang.value)">
+            
+            <output id="ival" >0</output>
+        </p>
 
         <p>
             <input type="submit" value="Enviar">
